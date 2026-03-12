@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ferrari F1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body style="background-color:black">
+
+
+    <nav class="bg-black bg-opacity-70">
+        <div class="mx-auto px-10 py-4 flex justify-between items-center">
+            <h1 class="text-red-800 italic text-5xl font-bold font-serif hover:text-red-500">Ferrari</h1>
+            
+            <ul class="flex gap-12 text-white text-shadow-white text-2xl font-bold">
+                <li><a href="#" class="hover:text-red-500 border hover:border-b-red-800 ">Home</a></li> 
+                <li><a href="#" class="hover:text-red-500 ">Drivers</a></li> 
+                <li><a href="#" class="hover:text-red-500 ">Cars</a></li> 
+                <li><a href="#" class="hover:text-red-500  ">History</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+
+
+    <section class="mx-auto grid grid-rows-2 gap-6 flex h-80 px-20 py-20">
+        <div id="hero" class="w-full  relative h-screen overflow-hidden">
+            
+            <img src="SF.png" class="absolute  opacity-90">
+        
+            <img id="car" src="car1.png" class="  drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-out">
+        </div>
+        <div class="w-full flex items-center ">
+            <h1 class="text-white font-mono text-2xl" >The most iconic team in Formula 1 history</h1>
+
+            <button class="bg-black outline-4 border-double border-red-800 text-sm m-2 dark:text-red-800 shadow shadow-bg-red-800/80 transition-all duration-300 transform hover:shadow-2xl hover:bg-red-800  rounded-lg text-red-800  hover:text-white">Explore Team</button>
+    
+        </div>
+        
+    </section>
+    
+    <div class="mx-auto flex "> 
+
+
+    </div>
+
+
+
+
+
+    <hr class="">
+    <footer class="mx-auto px-10 py-4 relative overflow-hidden">
+        <p class="text-white text-center text-sm px-8">&copy; 2026 Ferrari F1. All rights reserved.<br>Built by KAVANA Harish</p>
+        <div class="text-sm text-white gap-4 flex justify-center mt-2">
+            <link href="#" class=" hover:text-red-800 transition-colors">Privacy Policy</link>
+            <span class="text-gray-500">|</span>
+            <link href="#" class=" hover:text-red-800 transition-colors">Terms of service</link>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

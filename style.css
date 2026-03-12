@@ -1,0 +1,25 @@
+@keyframes lineMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-lineBehind {
+  animation: lineMove 3s linear infinite;
+  z-index: 5;
+}
+
+.animate-lineFront {
+  animation: lineMove 3s linear infinite;
+  z-index: 30;
+}
+
+.ferrari-text{
+  color: transparent;
+  -webkit-text-stroke: 4px white;
+  letter-spacing: 10px;
+  font-family: 'Arial Black', sans-serif;
+}
