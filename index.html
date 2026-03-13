@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Ferrari F1</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
 </head>
 <body style="background-color:black">
 
@@ -17,7 +17,7 @@
             <h1 class="text-red-800 italic text-5xl font-bold font-serif hover:text-red-500">Ferrari</h1>
             
             <ul class="flex gap-12 text-white text-shadow-white text-2xl font-bold">
-                <li><a href="#" class="hover:text-red-500 border hover:border-b-red-800 ">Home</a></li> 
+                <li><a href="#" class="hover:text-red-500 ">Home</a></li> 
                 <li><a href="#" class="hover:text-red-500 ">Drivers</a></li> 
                 <li><a href="#" class="hover:text-red-500 ">Cars</a></li> 
                 <li><a href="#" class="hover:text-red-500  ">History</a></li>
@@ -28,34 +28,47 @@
 
 
 
-    <section class="mx-auto grid grid-rows-2 gap-6 flex h-80 px-20 py-20">
-        <div id="hero" class="w-full  relative h-screen overflow-hidden">
+    <section class="max-w-8xl grid grid-rows-2 gap-2 px-20 py-20">
+        <div id="hero" class="relative overflow-hidden">
             
-            <img src="SF.png" class="absolute  opacity-90">
+            <img src="/image/SF.png" class="w-2  h-2">
         
-            <img id="car" src="car1.png" class="  drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-out">
+            <img id="car" src="/image/car1.png" class="transition-transform duration-300 ease-out">
         </div>
-        <div class="w-full flex items-center ">
-            <h1 class="text-white font-mono text-2xl" >The most iconic team in Formula 1 history</h1>
-
-            <button class="bg-black outline-4 border-double border-red-800 text-sm m-2 dark:text-red-800 shadow shadow-bg-red-800/80 transition-all duration-300 transform hover:shadow-2xl hover:bg-red-800  rounded-lg text-red-800  hover:text-white">Explore Team</button>
+        <div class="mt-2 text-center items-center ">
+            <h1 class="text-white font-mono font-bold text-4xl" >The most iconic team in Formula 1 history</h1><br>
+            <p class="text-gray-500 text-2xl font-mono">Scuderia Ferrari is the oldest and most successful team in Formula 1. 
+Founded in 1929 by Enzo Ferrari, the team has built some of the most 
+iconic racing cars and achieved legendary victories in motorsport.</p><br>
+            <button class="mt-4 border border-red-500/50 ring-2 font-bold shadow-xl shadow-red-500/50 text-white px-2 py-2 rounded-lg hover:bg-red-800" href="team.html">Explore Team</button>
     
         </div>
         
     </section>
+
+
+<div class="grid grid-cols-2 gap-8 p-20">
+
+  <div class="bg-gradient-to-r from-[#240a0a] to-[#101517] transition transform hover:scale-105 hover:shadow-2xl duration-300 p-5 rounded-lg">
+    <h2 class="font-bold text-[#f0f0f1]">Ferrari's Legacy</h2>
+    <p class="text-[#c3c4c7]">Ferrari has a rich history in Formula 1, with legendary drivers like Michael Schumacher, Niki Lauda, and Sebastian Vettel contributing to the team's success.</p>
+  </div>
+
+  <div class="bg-gradient-to-r from-[#240a0a] to-[#101517] p-5 transition transform hover:scale-105 hover:shadow-2xl duration-300 rounded-lg">
+    <h2 class="font-bold text-[#f0f0f1]">Ferrari's Achievements</h2>
+    <p class="text-[#c3c4c7]">Ferrari has won the Constructors' Championship a record 16 times and the Drivers' Championship 15 times.</p>
+  </div>
+
+</div>
     
-    <div class="mx-auto flex "> 
-
-
-    </div>
-
+    
 
 
 
 
     <hr class="">
     <footer class="mx-auto px-10 py-4 relative overflow-hidden">
-        <p class="text-white text-center text-sm px-8">&copy; 2026 Ferrari F1. All rights reserved.<br>Built by KAVANA Harish</p>
+        <p class="text-white text-center text-sm px-8">&copy; 2026 Ferrari F1. All rights reserved.<br>Built by KAVANA HARISH</p>
         <div class="text-sm text-white gap-4 flex justify-center mt-2">
             <link href="#" class=" hover:text-red-800 transition-colors">Privacy Policy</link>
             <span class="text-gray-500">|</span>
