@@ -12,42 +12,95 @@
 <body style="background-color:black">
 
 
-    <nav class="bg-black bg-opacity-70">
+    <nav class="sticky top-0 w-full z-50 backdrop-blur-md bg-gradient-to-r from-[#101517] to-[#240a0a]">
         <div class="mx-auto px-10 py-4 flex justify-between items-center">
             <h1 class="text-red-800 italic text-5xl font-bold font-serif hover:text-red-500">Ferrari</h1>
             
-            <ul class="flex gap-12 text-white text-shadow-white text-2xl font-bold">
-                <li><a href="#" class="hover:text-red-500 ">Home</a></li> 
-                <li><a href="#" class="hover:text-red-500 ">Drivers</a></li> 
-                <li><a href="#" class="hover:text-red-500 ">Cars</a></li> 
+            <ul class="flex gap-20 text-white text-shadow-white text-2xl font-bold">
+                <li><a href="#hero" class="hover:text-red-500 ">Home</a></li>
+                <li><a href="#" class="hover:text-red-500 ">Drivers</a></li>
+                <li><a href="#" class="hover:text-red-500 ">Cars</a></li>
                 <li><a href="#" class="hover:text-red-500  ">History</a></li>
+                <li><a href="#" class="hover:text-red-500  ">Gallery</a></li>
+                <li><a href="#" class="hover:text-red-500  ">Contact</a></li>
             </ul>
             
         </div>
     </nav>
 
+    <section class="max-w-8xl mx-auto px-6 py-16 text-center">
+    <div class="relative overflow-hidden flex justify-center items-center">
+
+        <img src="/image/SF.png"
+        class="absolute opacity-50 w-[900px]">
+
+        <img src="/image/car1.png"
+        class="relative w-[700px] transition duration-500 hover:scale-105 hover:-translate-y-3">
+
+    </div>
+
+    <!-- Text Content -->
+    <div class="mt-10 max-w-3xl mx-auto space-y-6">
+
+        <h1 class="text-white font-bold text-4xl md:text-5xl font-mono">
+            The most iconic team in Formula 1 history
+        </h1>
+
+        <p class="text-gray-400 text-lg md:text-xl font-mono">
+            Scuderia Ferrari is the oldest and most successful team in Formula 1.  
+            Founded in 1929 by Enzo Ferrari, the team has built some of the most  
+            iconic racing cars in motorsport history.
+        </p>
+
+        <button class="px-6 py-3 rounded-lg border border-red-500 text-white font-bold 
+        shadow-lg shadow-red-500/40 hover:bg-red-700 transition duration-300">
+            Explore Cars
+        </button>
+
+    </div>
+
+</section>
 
 
-    <section class="max-w-8xl grid grid-rows-2 gap-2 px-20 py-20">
+    <!-- <section class="max-w-8xl grid grid-rows-2 gap-4 px-20 py-20">
         <div id="hero" class="relative overflow-hidden">
             
-            <img src="/image/SF.png" class="w-2  h-2">
+            <img src="/image/SF.png">
         
             <img id="car" src="/image/car1.png" class="transition-transform duration-300 ease-out">
         </div>
-        <div class="mt-2 text-center items-center ">
-            <h1 class="text-white font-mono font-bold text-4xl" >The most iconic team in Formula 1 history</h1><br>
+        <div class="text-center space-y-4">
+            <h1 class="text-white font-mono font-bold text-4xl" >The most iconic team in Formula 1 history</h1>
             <p class="text-gray-500 text-2xl font-mono">Scuderia Ferrari is the oldest and most successful team in Formula 1. 
 Founded in 1929 by Enzo Ferrari, the team has built some of the most 
-iconic racing cars and achieved legendary victories in motorsport.</p><br>
-            <button class="mt-4 border border-red-500/50 ring-2 font-bold shadow-xl shadow-red-500/50 text-white px-2 py-2 rounded-lg hover:bg-red-800" href="team.html">Explore Team</button>
+iconic racing cars and achieved legendary victories in motorsport.</p>
+            <button class="border border-red-500/50 ring-2 font-bold shadow-xl shadow-red-500/50 text-white px-3 py-2 rounded-lg hover:bg-red-800" >Explore cars</button>
     
         </div>
         
-    </section>
+    </section> -->
+
+    <div class="px-20 py-2 grid grid-cols-2 gap-8">
+        <div class="bg-black border border-gray-500 rounded-lg p-5">
+            <h2 class="font-bold text-xl  font-mono text-[#f0f0f1]">About Ferrari</h2><br>
+            <p class="text-[#B0B0B0] text-justify">Scuderia Ferrari is the racing division of Ferrari and competes in the 
+Formula One World Championship. The team was founded by Enzo Ferrari 
+and made its Formula One debut in 1950.
+<br>
+<br>
+Ferrari is famous for its iconic red racing cars and its passionate fan 
+base known as the Tifosi. Over decades, Ferrari has produced some of 
+the greatest drivers and most successful racing cars in motorsport history.</p>
+        </div>
+        <div class="bg-[url(/image/f1team.jpg)] bg-cover bg-center rounded-lg">
+    
+        </div>
+    </div>
 
 
-<div class="grid grid-cols-2 gap-8 p-20">
+
+
+<div class="grid grid-rows-2 gap-8 p-20">
 
   <div class="bg-gradient-to-r from-[#240a0a] to-[#101517] transition transform hover:scale-105 hover:shadow-2xl duration-300 p-5 rounded-lg">
     <h2 class="font-bold text-[#f0f0f1]">Ferrari's Legacy</h2>
@@ -66,13 +119,13 @@ iconic racing cars and achieved legendary victories in motorsport.</p><br>
 
 
 
-    <hr class="">
+    <hr class="w-full border-gray-700 my-8">
     <footer class="mx-auto px-10 py-4 relative overflow-hidden">
         <p class="text-white text-center text-sm px-8">&copy; 2026 Ferrari F1. All rights reserved.<br>Built by KAVANA HARISH</p>
         <div class="text-sm text-white gap-4 flex justify-center mt-2">
-            <link href="#" class=" hover:text-red-800 transition-colors">Privacy Policy</link>
+            <link href="#" class=" hover:text-red-900 transition-colors">Privacy Policy</link>
             <span class="text-gray-500">|</span>
-            <link href="#" class=" hover:text-red-800 transition-colors">Terms of service</link>
+            <link href="#" class=" hover:text-red-900 transition-colors">Terms of service</link>
         </div>
     </footer>
     <script src="script.js"></script>
